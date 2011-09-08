@@ -1,1 +1,1 @@
-apt-get install git git-man gcc
+apt-get install make pkg-config git git-man gcc g++ libssl-dev uuid-dev
