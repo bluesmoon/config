@@ -12,3 +12,4 @@ PS1="\u@\h \W\$(parse_git_branch) \$ "
 shopt -s checkwinsize
 
 PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+EDITOR=vi
