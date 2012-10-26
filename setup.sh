@@ -21,7 +21,7 @@ do_distro_check() {
 
 	if [ -d $wd/$distro ]; then
 		cd $wd/$distro
-		./setup.sh
+		sh setup.sh
 		cd $cwd
 	else
 		echo "Unsupported Distribution"
@@ -31,7 +31,7 @@ do_distro_check() {
 
 if [ -d $wd/$sys ]; then
 	cd $wd/$sys
-	./setup.sh
+	sh setup.sh
 	cd $cwd
 
 	do_distro_check
