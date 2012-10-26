@@ -12,7 +12,7 @@ wd=`dirname $0`
 
 
 do_distro_check() {
-	distro=`lsb_release -a 2>/dev/null | grep 'Distributor ID' | sed -e 's/Distributor ID:        //' | tr A-Z a-z`
+	distro=`lsb_release -a 2>/dev/null | grep 'Distributor ID' | sed -e 's/Distributor ID:	//' | tr A-Z a-z`
 
 	if [ -z "$distro" ]; then
 		echo "Unknown Distribution"
